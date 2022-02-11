@@ -2,21 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Raleway:wght@300;400&family=Roboto+Condensed&family=Roboto+Mono:wght@500&display=swap');
 
 :root{
-  --celeste:#AEFEFF;
-  --metallic: #35858B;
-  --prussianBlue: #04293A;
-  --oxfordBlue: #041C32;
+--celeste: #AEFEFF;
+--metallic: #35858B;
+--prussianBlue: #04293A;
+--oxfordBlue: #041C32; 
 }
-
-
-
-
-/*------------------------------------------------------------------
- [Master Stylesheet]
-
-  Project:	Marshmello Admin
-  Version:	1.0.0
--------------------------------------------------------------------*/
 /*-------------------------------------------------------------------
   ===== Table of Contents =====
 
@@ -10807,14 +10797,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #3c37f1;
-  border-color: #3c37f1;
+  background-color: var(--oxfordBlue);
+  border-color: var(--oxfordBlue);
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #1913ee;
-  border-color: #1610e5;
+  background-color: var(--prussianBlue);
+  border-color: var(--prussianBlue);
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -10874,15 +10864,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-success {
-  color: #fff;
-  background-color: #00d663;
-  border-color: #00d663;
+  color: #041C32 !important;
+  background-color: #AEFEFF;
+  border-color: #AEFEFF;
 }
 
 .btn-success:hover {
-  color: #fff;
-  background-color: #00b051;
-  border-color: #00a34b;
+  color: #041C32;
+  background-color: #a3edee;
+  border-color: #AEFEFF;
 }
 
 .btn-success:focus, .btn-success.focus {
@@ -11078,14 +11068,25 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #3c37f1;
-  border-color: #3c37f1;
+  color: #041C32;
+  border-color: #041C32;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #3c37f1;
-  border-color: #3c37f1;
+  background-color: #041C32;
+  border-color: #041C32;
+}
+
+.btn-outline-primary-2{
+  color: #fff;
+  background-color: #041C32;
+  border-color: #041C32;
+}
+.btn-outline-primary-2:hover{
+  color: #fff;
+  background-color: #35858B;
+  border-color: #35858B;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -12432,6 +12433,10 @@ input[type="button"].btn-block {
   cursor: default;
 }
 
+.nav-link.active{
+  background-color: #35858B!important;
+}
+
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
 }
@@ -12504,7 +12509,8 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0 !important;
+  background-color: #041C32 !important; 
 }
 
 .navbar > .container,
@@ -19028,4 +19034,12 @@ section {
   background: #f1efef;
 }
 
+.card-img-top{
+  object-fit:cover;
+  width:50%;
+}
+
+.card{
+  border:0;
+}
 /*# sourceMappingURL=maps/style.css.map */

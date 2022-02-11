@@ -1,7 +1,6 @@
 .navbar {
 	width: 100%;
-	padding: 1.875rem 1rem;
-	background: theme-color(primary);
+	background: $oxfordBlue;
 	@media (max-width: 991px) {
 		padding: .875rem 1rem;
 		height: $mobile-header-height;
@@ -146,10 +145,9 @@
 		left: 0;
 	}
 	.navbar {
-		padding: .875rem .1rem;
 		position: static;
 		z-index: auto;
-		background: theme-color(primary);
+		background: $oxfordBlue;
 		@media (max-width: 991px) {
 			padding: .875rem 1rem;
 		}
