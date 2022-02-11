@@ -1,3 +1,16 @@
+/* ----- Fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Raleway:wght@300;400&family=Roboto+Condensed&family=Roboto+Mono:wght@500&display=swap');
+
+:root{
+  --celeste:#AEFEFF;
+  --metallic: #35858B;
+  --prussianBlue: #04293A;
+  --oxfordBlue: #041C32;
+}
+
+
+
+
 /*------------------------------------------------------------------
  [Master Stylesheet]
 
@@ -12504,7 +12517,7 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
+  padding-top: 0rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
