@@ -2,6 +2,10 @@ const aboutAldair = document.getElementById("aboutMe-Aldair");
 const aboutAngeles = document.getElementById("aboutMe-Angeles");
 const aboutBernardo = document.getElementById("aboutMe-Bernardo");
 const aboutAbril = document.getElementById("aboutMe-Abril");
+const aboutJoss = document.getElementById("aboutMe-Joss");
+const aboutEduardo = document.getElementById("aboutMe-Eduardo");
+const aboutLiliana = document.getElementById("aboutMe-Liliana");
+const aboutMau = document.getElementById("aboutMe-Mau");
 
 aboutAldair.addEventListener('click', () => {
     Swal.fire({
@@ -112,3 +116,110 @@ aboutAbril.addEventListener('click', () => {
     });
 });
 
+aboutJoss.addEventListener('click', () => {
+    Swal.fire({
+        title: "Joss \n(FullStack Developer)",
+        text: "Desarrolladora involucrada en cada paso del proceso para el desarrollo del proyecto, así puedo aportar mi punto de vista y ayudar a resolver los problemas que se puedan encontrar en el camino y facilitar el trabajo en equipo. Novata enamorada del desarrollo web y de los gatitos (próximamente de las criptomonedas), creciendo y desarrollando habilidades con cada línea de código.",
+        imageUrl: "../images/assets/img/Joss.png",
+        imageWidth: 100,
+        imageHeight: 130,
+        imageAlt: "Imagen Joss",
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+    }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+    });
+});
+
+aboutEduardo.addEventListener('click', () => {
+    Swal.fire({
+        title: "Eduardo \n(Backend Developer)",
+        text: "Entusiasta de formar parte del equipo de Creep-tomonedas, soy una persona tranquila siempre en busca de mantener el orden tanto en el equipo como en las tareas. Disfruto de jugar videojuegos, juegos de mesa y siempre defenderé que Bulbasaur es el mejor inicial.",
+        imageUrl: "../images/assets/img/Eduardo.png",
+        imageWidth: 100,
+        imageHeight: 130,
+        imageAlt: "Imagen Eduardo",
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+    }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+    });
+});
+
+aboutLiliana.addEventListener('click', () => {
+    Swal.fire({
+        title: "Liliana \n(FullStack Developer)",
+        text: "Procuro poner atención a los pequeños detalles para que los resultados sean de calidad pero también funcionales. Me gusta explorar mi parte creativa, pero también enfrentarme a desafíos en los que tenga que pensar fuera de la caja",
+        imageUrl: "../images/assets/img/Lili.png",
+        imageWidth: 100,
+        imageHeight: 130,
+        imageAlt: "Imagen Liliana",
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+    }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+    });
+});
+
+aboutMau.addEventListener('click', () => {
+    Swal.fire({
+        title: "Mauricio \n(FullStack Developer)",
+        text: "¡Me encanta trabajar en equipo, los perros y una buena comida! Siempre busco ayudar a los demas y buscar la manera mas eficaz y eficiente de resolver problemas. Aprendiendo sobre las criptomonedas, los ajolotes y el mundo del trading.",
+        imageUrl: "../images/assets/img/Mau.png",
+        imageWidth: 100,
+        imageHeight: 130,
+        imageAlt: "Imagen Liliana",
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+    }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+    });
+});
