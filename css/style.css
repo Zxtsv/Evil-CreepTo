@@ -18367,11 +18367,11 @@ h6, .h6 {
 }
 
 .font-weight-medium {
-  font-weight: 500;
+  font-size: 50px;
 }
 
 .text-small {
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .footer {
@@ -18663,7 +18663,7 @@ html {
 }
 
 .main-banner .banner-title {
-  width: 56%;
+  width: 60%;
 }
 
 @media (max-width: 991px) {
