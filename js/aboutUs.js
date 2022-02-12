@@ -205,21 +205,5 @@ aboutMau.addEventListener('click', () => {
         imageWidth: 100,
         imageHeight: 130,
         imageAlt: "Imagen Liliana",
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: () => {
-            Swal.showLoading()
-            timerInterval = setInterval(() => {
-
-            }, 100)
-        },
-        willClose: () => {
-            clearInterval(timerInterval)
-        }
-    }).then((result) => {
-        /* Read more about handling dismissals below */
-        if (result.dismiss === Swal.DismissReason.timer) {
-            console.log('I was closed by the timer')
-        }
     });
 });
