@@ -36,7 +36,7 @@
                 NO. 01
             </div>
         </div> -->
-        
+
         <div class="blog-header-container">
             <div class="blog-header">
                 <div class="blog-article header-article">
@@ -118,10 +118,8 @@
             </div>
         </div>
         <div class="blog-part right-blog">
-            <marquee width="100%" direction="left">
-                <span>Aqui van las moneditas</span>
-                <span>Aqui tambien</span>
-                <span>Siguen siendo moneditas</span>
+            <marquee width="100%" direction="left" id="cintilla">
+                <!--Aqui se muestran las monedas-->
             </marquee>
             <div class="blog-right-title-container">
                 <div class="blog-right-title">
@@ -193,6 +191,26 @@
             </div>
         </div>
     </div>
+
+    <script>
+        fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false')
+            .then(respuesta => respuesta.json())
+            .then(coins => {
+                let element = document.getElementById('cintilla')
+                element.innerHTML = `<span><img src='${coins[0].image}' width = 20px> ${coins[0].name}(${coins[0].symbol}): ${coins[0].current_price} USD </span>
+                <span><img src='${coins[1].image}' width = 20px> ${coins[1].name}(${coins[1].symbol}): ${coins[1].current_price} USD </span>
+                <span><img src='${coins[2].image}' width = 20px> ${coins[2].name}(${coins[2].symbol}): ${coins[2].current_price} USD </span>
+                <span><img src='${coins[3].image}' width = 20px> ${coins[3].name}(${coins[3].symbol}): ${coins[3].current_price} USD </span>
+                <span><img src='${coins[4].image}' width = 20px> ${coins[4].name}(${coins[4].symbol}): ${coins[4].current_price} USD </span>
+                <span><img src='${coins[5].image}' width = 20px> ${coins[5].name}(${coins[5].symbol}): ${coins[5].current_price} USD </span>
+                <span><img src='${coins[6].image}' width = 20px> ${coins[6].name}(${coins[6].symbol}): ${coins[6].current_price} USD </span>
+                <span><img src='${coins[7].image}' width = 20px> ${coins[7].name}(${coins[7].symbol}): ${coins[7].current_price} USD </span>
+                <span><img src='${coins[8].image}' width = 20px> ${coins[8].name}(${coins[8].symbol}): ${coins[8].current_price} USD </span>
+                <span><img src='${coins[9].image}' width = 20px> ${coins[9].name}(${coins[9].symbol}): ${coins[9].current_price} USD </span>`;
+                console.log(coins)
+            })
+            .catch(err => console.log(err))
+    </script>
 
 </body>
 
