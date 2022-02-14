@@ -19060,3 +19060,6 @@ section {
   border:0;
 }
 /*# sourceMappingURL=maps/style.css.map */
+.icon{
+  transform: translateX(25px) translateY(-17px);
+}

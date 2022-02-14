@@ -9,13 +9,13 @@ const aboutMau = document.getElementById("aboutMe-Mau");
 
 aboutAldair.addEventListener('click', () => {
     Swal.fire({
-        title: "Aldair \n(Backend Developer)",
+        title: "Aldair \n(FullStack Developer)",
         text: "Una persona colaborativa que gusta del trabajo en equipo, apasionada y dedicada al proyecto cuidando cada detalle. Parte geek, parte músico, con el que da puntos de vista diferentes y creativos",
         imageUrl: "../images/assets/img/Aldair.png",
         imageWidth: 100,
         imageHeight: 130,
         imageAlt: "Imagen Aldair",
-        timer: 3000,
+        timer: 9000,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading()
@@ -42,7 +42,7 @@ aboutAngeles.addEventListener('click', () => {
         imageWidth: 100,
         imageHeight: 130,
         imageAlt: "Imagen Angeles",
-        timer: 3000,
+        timer: 9000,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading()
@@ -70,7 +70,7 @@ aboutBernardo.addEventListener('click', () => {
         imageWidth: 100,
         imageHeight: 130,
         imageAlt: "Imagen Bernardo",
-        timer: 3000,
+        timer: 9000,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading()
@@ -97,7 +97,7 @@ aboutAbril.addEventListener('click', () => {
         imageWidth: 100,
         imageHeight: 130,
         imageAlt: "Imagen Abril",
-        timer: 3000,
+        timer: 9000,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading()
@@ -124,7 +124,7 @@ aboutJoss.addEventListener('click', () => {
         imageWidth: 100,
         imageHeight: 130,
         imageAlt: "Imagen Joss",
-        timer: 3000,
+        timer: 9000,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading()
@@ -151,7 +151,7 @@ aboutEduardo.addEventListener('click', () => {
         imageWidth: 100,
         imageHeight: 130,
         imageAlt: "Imagen Eduardo",
-        timer: 3000,
+        timer: 9000,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading()
@@ -178,7 +178,7 @@ aboutLiliana.addEventListener('click', () => {
         imageWidth: 100,
         imageHeight: 130,
         imageAlt: "Imagen Liliana",
-        timer: 3000,
+        timer: 9000,
         timerProgressBar: true,
         didOpen: () => {
             Swal.showLoading()
@@ -204,6 +204,22 @@ aboutMau.addEventListener('click', () => {
         imageUrl: "../images/assets/img/Mau.png",
         imageWidth: 100,
         imageHeight: 130,
-        imageAlt: "Imagen Liliana",
+        imageAlt: "Imagen Mau",
+        timer: 9000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            timerInterval = setInterval(() => {
+
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+    }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
     });
 });
