@@ -64,7 +64,7 @@ input[placeholder] {
 
 .form-control:focus {
     box-shadow: none;
-    border: 1.5px solid #0779e4
+    border: 1.5px solid #041C32
 }
 
 select {
@@ -82,26 +82,33 @@ select:focus {
 
 .button {
     background-color: #fff;
-    color: #0779e4
+    color: #041C32;
+    border-radius: 15px;
 }
 
 .button:hover {
-    background-color: #0779e4;
+    background-color: #35858B;
     color: #fff
 }
 
-.btn-primary {
-    background-color: #0779e4
+#guardar {
+    background-color: #041C32;
+    border-radius: 15px;
+    color: #fff;
+}
+#guardar:hover{
+    background-color: #35858B;
 }
 
-.danger {
+.btn-danger {
     background-color: #fff;
     color: #e20404;
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
+    border-radius: 15px;
 }
 
-.danger:hover {
-    background-color: #e20404;
+.btn-danger:hover {
+    background-color: #e00505;
     color: #fff
 }
 
