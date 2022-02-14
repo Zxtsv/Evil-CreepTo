@@ -92,7 +92,7 @@ aboutBernardo.addEventListener('click', () => {
 aboutAbril.addEventListener('click', () => {
     Swal.fire({
         title: "Abril \n(Backend Developer)",
-        text: "Impulsa la visión estratégica de Creep-tomonedas, ademas superviso todas las etapas del ciclo creativo y las tareas del equipo. Pensadora estratégica, apasionada por formar equipos y los procesos realmente eficientes.",
+        text: "Impulso la visión estratégica de Creep-tomonedas, ademas superviso todas las etapas del ciclo creativo y las tareas del equipo. Pensadora estratégica, apasionada por formar equipos y los procesos realmente eficientes.",
         imageUrl: "../images/assets/img/Abril.png",
         imageWidth: 100,
         imageHeight: 130,
