@@ -40,6 +40,13 @@ h4 {
     text-align: justify
 }
 
+#img_display{
+    width: 90px;
+    height: 90px;
+    border-color: #777;
+    border-radius: 12px;
+}
+
 #img-section b,
 #img-section button,
 #deactivate b {

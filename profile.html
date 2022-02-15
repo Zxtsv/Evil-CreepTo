@@ -12,9 +12,11 @@
 <body>
     <div class="wrapper bg-white mt-sm-5">
         <h4 class="pb-4 border-bottom">Preferencias de Perfil</h4>
-        <div class="d-flex align-items-start py-3 border-bottom"> <img src="/images/assets/img/Eduardo.png" class="img" alt="">
-            <div class="pl-sm-4 pl-3" id="img-section"> <b>Foto de perfil</b>
-                <p>Tu imagen de perfil debe de ser menor a 1MB.</p> <button class="btn button border"><b>Subir</b></button>
+        
+        <div class="d-flex align-items-start py-3 border-bottom" > <!--<img src="/images/assets/img/Eduardo.png" class="img" alt="">!-->
+            <div class="pl-sm-4 pl-3" id="display_image"> <b>Foto de perfil</b>
+                <p>Tu imagen de perfil debe de ser menor a 1MB.</p> 
+                <input type="file" id="image_input" accept="image/jpg, image/png">
             </div>
         </div>
         <div class="py-2">
@@ -46,5 +48,8 @@
             </div>
         </div>
     </div>
+
+
+    <script src="/js/profileupload.js"></script>
 </body>
 </html>
