@@ -1,6 +1,6 @@
 //validar login 
 function validar() {
-var usuario, contraseña,expresion;
+var usuario, contraseña, expresion;
 usuario=document.getElementById("usuario").value;
 contraseña=document.getElementById("contraseña").value;
 expresion= /^\w+([\.\+\-]?\w+)*@\w+([\.-]?\w+)*(\.\w)+$/
@@ -22,7 +22,8 @@ return false;
 return false; 
 }
 
-
+localStorage.setItem("usuario", usuario);
+localStorage.setItem("contraseña", contraseña);
 
 }
 //validar registro
@@ -47,11 +48,14 @@ function validarRegistro() {
     return false; 
   }
    if(contraseñaRegistro===repetirContraseña){
+  localStorage.setItem("Nuevo usuario", usuarioRegistro);
+  localStorage.setItem("Contraseña registro", contraseñaRegistro);
   return window.alert("Acceso")
    
   }else
 alert("Las contraseñas no coinciden, favor de verificarlas")
 return false;
+
 
 }
 /*funciones del formato*/
