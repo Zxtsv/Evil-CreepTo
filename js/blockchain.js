@@ -1,9 +1,10 @@
 const donationButtom = document.querySelector(".Donate");
-
+// Accionables
 donationButtom.addEventListener("click", () => {
   getAccountDonate();
 });
 
+// Funcionalidades
 function getAccountDonate() {
   Swal.fire({
     title: "¡Dona Bitcoin con Bitso!",
