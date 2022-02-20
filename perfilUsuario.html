@@ -1,143 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/StylePerfil.css">
-</head>
-<body>
-  <header> 
-    <!--<div class="left-panel">
-      <div class="logo">Nutcall</div>
-      <div class="menu-button"><i class="fa fa-bars"></i></div>
-    </div>
-    <div class="content">
-      <div class="search-bar">
-        <div class="filter"><i class="fa fa-filter"></i></div>
-        <input class="query" type="text" placeholder="Search for contacts, experts, companies &amp; more..."/>
-        <button class="search"><i class="fa fa-search"></i><span>Search</span></button>
-      </div>
-      <div class="add-contact"><i class="fa fa-plus"></i><span>Add Contact</span></div>
-      <div class="icons"><i class="fa fa-user-plus"></i><i class="fa fa-comments"></i><i class="fa fa-bell active"></i></div>
-    </div>
-    <div class="user-panel">
-      <div class="name">Mark Z</div>
-      <div class="avatar"></div>
-      <div class="logout">
-        <div class="fa fa-sign-out"></div>
-      </div>
-    </div>-->
-  </header>
-    <!--Inicio Navbar 1-->
-      <nav> 
-        <div class="menu">
-          <div class="group">
-            <div class="title"> <span>Profile</span>
-              <div class="arrow"><i class="fa fa-chevron-up"></i></div>
-            </div>
-            <ul>
-              <li>
-                <div class="icon">
-                  <div class="avatar"></div>
-                </div><span>Mark Zuckerberg</span>
-              </li>
-              <li>
-                <div class="icon"><i class="fa fa-edit"></i></div><span>Edit Profile</span>
-              </li>
-              <li>
-                <div class="icon"><i class="fa fa-lock"></i></div><span>Privary</span>
-              </li>
-              <li>
-                <div class="icon"><i class="fa fa-folder"></i></div><span>My Works</span>
-              </li>
-              <li>
-                <div class="icon"><i class="fa fa-user-plus"></i></div><span>Invites</span>
-              </li>
-              <li>
-                <div class="icon"><i class="fa fa-gears"></i></div><span>Settings</span>
-              </li>
-            </ul>
-          </div>
-          <div class="group">
-            <div class="title"> <span>Main</span>
-              <div class="arrow"><i class="fa fa-chevron-down"></i></div>
-            </div>
-          </div>
-          <div class="group">
-            <div class="title"> <span>Tools</span>
-              <div class="arrow"><i class="fa fa-chevron-down"></i></div>
-            </div>
-          </div>
-          <div class="group">
-            <div class="title"> <span>Info</span>
-              <div class="arrow"><i class="fa fa-chevron-down"></i></div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    
-    <!--Fin Navbar 1-->
 
-      <!--Parte central de la página web-->
-      <main>
-            <div class="main-container">
-              <!-- LEFT-CONTAINER -->
-              <div class="left-container container">
-                <div class="donut-chart-block block">
-                  <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
-                  <h2 class="titular">OS AUDIENCE STATS</h2>
-                  <div class="donut-chart">
-                    <!-- DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
-                    <div id="porcion1" class="recorte">
-                      <div class="quesito ios" data-rel="21"></div>
-                    </div>
-                    <div id="porcion2" class="recorte">
-                      <div class="quesito mac" data-rel="39"></div>
-                    </div>
-                    <div id="porcion3" class="recorte">
-                      <div class="quesito win" data-rel="31"></div>
-                    </div>
-                    <div id="porcionFin" class="recorte">
-                      <div class="quesito linux" data-rel="9"></div>
-                    </div>
-                    <!-- END DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
-                    <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p>
-                  </div>
-                  <ul class="os-percentages horizontal-list">
-                    <li>
-                      <p class="ios os scnd-font-color">iOS</p>
-                      <p class="os-percentage">21<sup>%</sup></p>
-                    </li>
-                    <li>
-                      <p class="mac os scnd-font-color">Mac</p>
-                      <p class="os-percentage">48<sup>%</sup></p>
-                    </li>
-                    <li>
-                      <p class="linux os scnd-font-color">Linux</p>
-                      <p class="os-percentage">9<sup>%</sup></p>
-                    </li>
-                    <li>
-                      <p class="win os scnd-font-color">Win</p>
-                      <p class="os-percentage">32<sup>%</sup></p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          
-              <!-- MIDDLE-CONTAINER -->
-              <div class="middle-container container">
-                <div class="profile block">
-                  <!-- PROFILE (MIDDLE-CONTAINER) -->
-                  <a class="add-button" href="#28"><span class="icon entypo-plus scnd-font-color"></span></a>
-                  <div class="profile-picture big-profile-picture clear">
-                    <img width="150px" alt="Anne Hathaway picture" src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
-                  </div>
-                  <h1 class="user-name">Anne Hathaway</h1>
-                  <div class="profile-description">
-                    <div class="intro box">
-                      <!--<div class="intro-title">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/StylePerfil.css">
+  <link rel="shortcut icon" href="images/assets/img/logo.png" />
+  <title>Mi perfil</title>
+</head>
+
+<body>
+  <!--Inicio Navbar 1-->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/assets/img/ajolote1.png" alt="Creepto-Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
+          <img src="images/logo-dark.svg" class="logo-mobile-menu" alt="logo">
+          <a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
+        </div>
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial">Foro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#plans">Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav>
+    <div class="menu">
+      <div class="group">
+        <div class="title"> <span>Profile</span>
+        </div>
+        <ul>
+          <li>
+            <div class="icon">
+            </div><span>Mi perfil</span>
+          </li>
+          <li>
+            <div class="icon"><i class="fa fa-edit"></i></div><span>Edit Profile</span>
+          </li>
+          <li>
+            <div class="icon"><i class="fa fa-lock"></i></div><span>Privary</span>
+          </li>
+          <li>
+            <div class="icon"><i class="fa fa-folder"></i></div><span>My Works</span>
+          </li>
+          <li>
+            <div class="icon"><i class="fa fa-user-plus"></i></div><span>Invites</span>
+          </li>
+          <li>
+            <div class="icon"><i class="fa fa-gears"></i></div><span>Settings</span>
+          </li>
+        </ul>
+      </div>
+      <div class="group">
+        <button type="button" class="btn btn-wallet mt-4 activarWallet">Conecta tu Wallet</button>
+      </div>
+    </div>
+  </nav>
+
+  <!--Fin Navbar 1-->
+
+  <!--Parte central de la página web-->
+  <main>
+    <div class="main-container">
+      <!-- LEFT-CONTAINER -->
+      <div class="left-container container2">
+        <div class="donut-chart-block block">
+          <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
+          <h2 class="titular">Preguntas Realizadas</h2>
+          <div class="donut-chart">
+            <!-- DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+            <div id="porcion1" class="recorte">
+              <div class="quesito ios" data-rel="21"></div>
+            </div>
+            <div id="porcion2" class="recorte">
+              <div class="quesito mac" data-rel="39"></div>
+            </div>
+            <div id="porcion3" class="recorte">
+              <div class="quesito linux" data-rel="31"></div>
+            </div>
+            <div id="porcionFin" class="recorte">
+              <div class="quesito linux" data-rel="9"></div>
+            </div>
+            <!-- END DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+            <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p>
+          </div>
+          <ul class="os-percentages horizontal-list">
+            <li class="me-1 ms-2" style="width: auto;">
+              <p class="ios os scnd-font-color">Criptomonedas</p>
+              <p class="os-percentage">21<sup>%</sup></p>
+            </li>
+            <li class="me-1">
+              <p class="mac os scnd-font-color">Blockchain</p>
+              <p class="os-percentage">48<sup>%</sup></p>
+            </li>
+            <li>
+              <p class="linux os scnd-font-color">Wallets</p>
+              <p class="os-percentage">31<sup>%</sup></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MIDDLE-CONTAINER -->
+      <div class="middle-container container2">
+        <div class="profile block">
+          <!-- PROFILE (MIDDLE-CONTAINER) -->
+          <div class="profile-picture big-profile-picture clear">
+            <img width="150px" alt="Anne Hathaway picture"
+              src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
+          </div>
+          <h1 class="user-name">Username  </h1>
+          <div class="profile-description">
+            <div class="intro box">
+              <!--<div class="intro-title">
                        Introduction
                        <button class="intro-menu"></button>
                       </div>
@@ -162,28 +165,35 @@
                         <p style="margin-left: 10px;">Player name<br><a href="#">Quan Ha</a></p>
                         </div>
                       </div>-->
-                      </div>
-                    <p class="scnd-font-color">Lorem ipsum dolor sit amet consectetuer adipiscing</p>
-                  </div>
-                </div>
-              </div>
-              <!-- RIGHT-CONTAINER -->
-              <div class="right-container container">
-                <div class="tweets block">
-                  <!-- TWEETS (MIDDLE-CONTAINER) -->
-                  <h2 class="titular"><span class="icon zocial-twitter"></span>LATEST TWEETS</h2>
-                  <div class="tweet first">
-                    <p>Ice-cream trucks only play music when out of ice-cream. Well played dad. On <a class="tweet-link" href="#17">@Quora</a></p>
-                    <p><a class="time-ago scnd-font-color" href="#18">3 minutes ago</a></p>
-                  </div>
-                  <div class="tweet">
-                    <p>We are in the process of pushing out all of the new CC apps! We will tweet again once they are live <a class="tweet-link" href="#19">#CreativeCloud</a></p>
-                    <p><a class="scnd-font-color" href="#20">6 hours ago</a></p>
-                  </div>
-                </div>
-              </div> <!-- end right-container -->
-            </div> <!-- end main-container -->
-      </main>
-      <!--Final de la parte central de la página web-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT-CONTAINER -->
+      <div class="right-container container2">
+        <div class="tweets block">
+          <!-- TWEETS (MIDDLE-CONTAINER) -->
+          <h2 class="titular"><span class="icon zocial-twitter"></span>Últimas Preguntas</h2>
+          <div class="tweet first">
+            <p>Ice-cream trucks only play music when out of ice-cream. Well played dad. On <a class="tweet-link"
+                href="#17">@Quora</a></p>
+            <p><a class="time-ago scnd-font-color" href="#18">3 minutes ago</a></p>
+          </div>
+          <div class="tweet">
+            <p>We are in the process of pushing out all of the new CC apps! We will tweet again once they are live <a
+                class="tweet-link" href="#19">#CreativeCloud</a></p>
+            <p><a class="scnd-font-color" href="#20">6 hours ago</a></p>
+          </div>
+        </div>
+      </div> <!-- end right-container -->
+    </div> <!-- end main-container -->
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/activarWallet.js"></script>
+  <!--Final de la parte central de la página web-->
 </body>
+
 </html>
