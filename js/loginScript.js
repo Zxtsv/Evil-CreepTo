@@ -21,7 +21,7 @@ return false;
   alert("La contraseña es muy larga"); 
 return false; 
 }
-
+//almacenamiento de datos Local
 localStorage.setItem("usuario", usuario);
 localStorage.setItem("contraseña", contraseña);
 
@@ -56,7 +56,7 @@ function validarRegistro() {
 alert("Las contraseñas no coinciden, favor de verificarlas")
 return false;
 
-
+//almacenamiento de datos Local
 localStorage.setItem("usuarioRegistro", usuarioRegistro);
 localStorage.setItem("contraseñaRegistrocontraseña", contraseñaRegistro);
 localStorage.setItem("repetirContraseñacontraseña", repetirContraseña);
