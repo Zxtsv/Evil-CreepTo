@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stylePreferencias.css">
   <link rel="stylesheet" href="/StylePerfil.css">
   <link rel="shortcut icon" href="images/assets/img/logo.png" />
   <title>Mi perfil</title>
@@ -60,11 +60,10 @@
         <ul>
           <li>
             <div class="icon">
-            </div><span>Mi perfil</span>
+            </div><span><a href="/perfilUsuario.html">Mi perfil</a></span>
           </li>
           <li>
-            </a>
-            <div class="icon"><i class="fa fa-edit"></i></div><span><a class="preferencias-perfil" href="/preferenciasUsuario.html">Editar Perfil</a></span>
+            <div class="icon"><i class="fa fa-edit"></i></div><span>Edit Profile</span>
           </li>
           <li>
             <div class="icon"><i class="fa fa-lock"></i></div><span>Privary</span>
@@ -83,13 +82,6 @@
       <div class="group">
         <button type="button" class="btn btn-wallet mt-4 activarWallet">Conecta tu Wallet</button>
       </div>
-      <li><br><br><br><br><br><br>
-        <div style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="64" height="64"
-          viewBox="0 0 172 172"
-          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#aefeff"><path d="M169.47515,133.41908l-23.31124,-23.31253c0.37509,-5.35796 0.36077,-10.15934 5.74012,-15.54289c10.6529,-10.67735 10.6529,-27.96283 0,-38.64018c-3.62377,-3.60544 -5.65547,-8.51015 -5.6427,-13.62197c-0.01679,-15.08233 -12.23879,-27.30503 -27.32113,-27.32268c-5.11166,0.01275 -10.01617,-2.01909 -13.62124,-5.643c-10.6752,-10.65622 -27.96299,-10.65622 -38.63819,0c-3.60507,3.62389 -8.50957,5.65573 -13.62122,5.643c-15.08229,0.01771 -27.30424,12.24039 -27.32104,27.32268c0.01278,5.11182 -2.01892,10.01654 -5.6427,13.62197c-10.6529,10.67735 -10.6529,27.96283 0,38.64018c5.40752,5.41171 5.40658,10.77846 5.74015,15.54289l-23.31137,23.31253c-0.98678,0.9882 -1.3921,2.41658 -1.07142,3.77578c0.32068,1.35921 1.3217,2.45578 2.64613,2.8987l20.85438,6.95009l6.94971,20.85554c0.44255,1.32464 1.53905,2.32594 2.89833,2.64669c1.35928,0.32075 2.78774,-0.08475 3.77578,-1.07182l28.21789,-28.21942c10.64413,10.51483 27.76495,10.51483 38.40908,0l28.21776,28.21934c0.98798,0.98722 2.4165,1.39281 3.77585,1.07205c1.35934,-0.32076 2.45586,-1.32218 2.89829,-2.64692l6.94971,-20.85554l20.85435,-6.95009c1.3245,-0.44281 2.32561,-1.53937 2.6463,-2.89862c0.32069,-1.35924 -0.0847,-2.78765 -1.07159,-3.77579zM37.48845,159.15913l-5.52459,-16.57731c-0.40207,-1.20261 -1.34583,-2.14642 -2.54842,-2.54856l-16.5765,-5.52491l15.25963,-15.26269c4.37798,9.8751 14.15886,16.24762 24.96091,16.26271c2.3313,0.00276 4.64265,0.42948 6.82125,1.25934zM72.38134,135.45062c-5.1127,-5.14216 -12.07036,-8.0248 -19.32165,-8.0052c-10.63142,-0.01268 -19.24656,-8.62831 -19.25863,-19.25973c0.01968,-7.25156 -2.8628,-14.20955 -8.00483,-19.32278c-7.50871,-7.52715 -7.50871,-19.71152 0,-27.23867c5.14197,-5.11323 8.02443,-12.0712 8.00477,-19.32272c0.01207,-10.63142 8.62721,-19.24705 19.25862,-19.25973c7.25131,0.01961 14.20899,-2.86305 19.3217,-8.00523c7.52607,-7.50991 19.7111,-7.50991 27.23717,0c5.11271,5.14216 12.07038,8.02481 19.32167,8.0052c10.63142,0.01268 19.24656,8.62831 19.25862,19.25973c-0.01969,7.25159 2.86278,14.20961 8.0048,19.32288c7.50871,7.52715 7.50871,19.71152 0,27.23867c-5.14199,5.11322 -8.02445,12.07119 -8.00477,19.32272c-0.01207,10.63142 -8.62721,19.24705 -19.25863,19.25973c-7.25129,-0.0196 -14.20896,2.86304 -19.32167,8.0052c-7.52751,7.50649 -19.70976,7.50643 -27.23719,-0.00013zM142.5844,140.03326c-1.20259,0.40213 -2.14635,1.34594 -2.54839,2.54856l-5.52461,16.57731l-22.39249,-22.39142c2.17861,-0.82985 4.48997,-1.25658 6.82128,-1.25934c10.80204,-0.01511 20.58292,-6.38761 24.96091,-16.26271l15.25962,15.26269z"></path><path d="M98.02543,73.69308c-1.82344,0.6084 -3.8228,-0.15509 -4.7766,-1.82403l-7.24883,-12.68688l-7.24897,12.68696c-0.95296,1.66993 -2.95315,2.43373 -4.77663,1.82403l-8.97845,-2.99202l5.27003,19.32428h31.46794l5.26997,-19.32428z"></path><path d="M86,30.90042c-24.49038,0 -44.34375,19.85337 -44.34375,44.34375c0,24.49038 19.85337,44.34375 44.34375,44.34375c24.49038,0 44.34375,-19.85337 44.34375,-44.34375c-0.02858,-24.47853 -19.86522,-44.31517 -44.34375,-44.34375zM116.76446,65.55447l-8.0625,29.5625c-0.47825,1.75405 -2.07137,2.97096 -3.88946,2.97095h-37.625c-1.81812,0.00009 -3.41131,-1.21684 -3.88951,-2.97095l-8.0625,-29.5625c-0.38865,-1.43407 0.04241,-2.96569 1.12196,-3.98655c1.07955,-1.02086 2.63286,-1.36572 4.04298,-0.8976l12.98869,4.33045l9.10968,-15.94392c0.71905,-1.25493 2.05476,-2.02903 3.5011,-2.02903c1.44634,0 2.78205,0.7741 3.5011,2.02903l9.10966,15.94392l12.98869,-4.33045c1.4102,-0.46872 2.9639,-0.12409 4.04365,0.89693c1.07975,1.02102 1.51065,2.55304 1.12146,3.98722z"></path></g></g></svg>
-        <br>Premium</div>
-      </li>
     </div>
   </nav>
 
@@ -97,14 +89,14 @@
 
   <!--Parte central de la página web-->
   <main>
-    <div class="main-container">
-      <!-- LEFT-CONTAINER -->
+    <div class="main-container ">
+      <!-- LEFT-CONTAINER 
       <div class="left-container container2">
         <div class="donut-chart-block block">
-          <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
+           DONUT CHART BLOCK (LEFT-CONTAINER) 
           <h2 class="titular">Preguntas Realizadas</h2>
           <div class="donut-chart">
-            <!-- DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
+             DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL 
             <div id="porcion1" class="recorte">
               <div class="quesito ios" data-rel="21"></div>
             </div>
@@ -117,8 +109,8 @@
             <div id="porcionFin" class="recorte">
               <div class="quesito linux" data-rel="9"></div>
             </div>
-            <!-- END DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
-            <p class="center-date">FEB<br><span class="scnd-font-color">2022</span></p>
+             END DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL 
+            <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p>
           </div>
           <ul class="os-percentages horizontal-list">
             <li class="me-1 ms-2" style="width: auto;">
@@ -136,26 +128,90 @@
           </ul>
         </div>
       </div>
-
+    -->
       <!-- MIDDLE-CONTAINER -->
       <div class="middle-container container2">
         <div class="profile block">
           <!-- PROFILE (MIDDLE-CONTAINER) -->
           <div class="profile-picture big-profile-picture clear">
-            <img width="150px" alt="Anne Hathaway picture"
+            <img width="150px" alt="Anne Hathaway picture" 
               src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
           </div>
-          <h1 class="user-name">Username <img src="https://img.icons8.com/color/30/000000/crown.png"/> </h1>
+          <h1 class="user-name">Editar Perfil  </h1>
           <div class="profile-description">
+            <div class="row mr-4">
+            <div class="col-md-12"> 
+                <label for="username">Nombre de Usuario</label> 
+                <input type="text" class="bg-light form-group col-md-12" placeholder="Steve92"> 
+            </div>
+        
+            <div class="col-md-12"> 
+                <label for="firstname">Nombre</label> 
+                <input type="text" class="bg-light form-group col-md-12" placeholder="Steve"> 
+            </div>
+            <div class="col-md-12"> 
+                <label for="lastname" class="text-align: justify">Apellido</label> 
+                <input type="text" class="bg-light form-group col-md-12" placeholder="Smith"> 
+            </div>
+            <div class="col-md-12 "> 
+                <label for="email">Correo electrónico</label> 
+                <input type="text" class="bg-light form-group col-md-12" placeholder="steve_@email.com"> 
+            </div>
+        </div>
+            <div class="col-md-12"> <label for="country">País</label> 
+                <select name="country" id="country" class="bg-light form-select col-md-12">
+                <option value="Elegir" selected>Elegir</option>
+                <option value="Argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">México</option>
+            </select> 
+            </div>
+            <div class="py-3 pb-4 border-bottom"> 
+                <button class="btn botones-form">Save Changes</button> 
+                <button class="btn botones-form">Cancel</button> 
+            </div>
+        <div class="py-3 pb-4 border-bottom" id="deactivate">
+            <div> <b>Eliminar cuenta</b>
+                <p>Nos entristece que te vayas. Eliminaremos tus datos.</p>
+            </div>
+            <div class="ml-auto"> <button class="btn btn-danger">Eliminar</button> </div>
+        </div>
             <div class="intro box">
+
+              <!--<div class="intro-title">
+                       Introduction
+                       <button class="intro-menu"></button>
+                      </div>
+                      <div class="info">
+                       <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
+                         <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" />
+                        </svg>
+                        <p>Product Designer at<br> <a href="#">Bravebist</a></p>
+                       </div>
+                       <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                         <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                         <path d="M9 22V12h6v10" />
+                        </svg>
+                        <p>Live in <br><a href="#">Hanoi, Vietnam</a></p>
+                       </div>
+                       <div class="info-item">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                         <path d="M437 75C388.7 26.6 324.4 0 256 0S123.3 26.6 75 75C26.6 123.3 0 187.6 0 256s26.6 132.7 75 181c48.3 48.4 112.6 75 181 75s132.7-26.6 181-75c48.4-48.3 75-112.6 75-181s-26.6-132.7-75-181zM252.4 481.9c-52-.9-103.7-19.5-145.2-55.8L256 277.2l21.7 21.8a165.9 165.9 0 00-35.7 87c-3.5 30.5 0 63.3 10.4 95.9zM299 320.3l105.7 105.8a224.8 224.8 0 01-121.3 54.1C262 419.5 268 360.3 299 320.3zm21.2-21.2c40-31 99.2-37 160-15.6A224.8 224.8 0 01426 404.8zM482 252.4a231.7 231.7 0 00-96-10.4 165.9 165.9 0 00-87 35.7L277.3 256l148.9-148.8c36.3 41.5 55 93.2 55.8 145.2zm-290.2-39.5c-40 31-99.2 37-160 15.6A224.8 224.8 0 0186 107.2zm-84.5-127a224.8 224.8 0 01121.3-54.1C250 92.5 244 151.7 213 191.7zM270 126c3.5-30.5 0-63.3-10.4-95.9 52 .9 103.7 19.5 145.2 55.8L256 234.8 234.3 213a165.9 165.9 0 0035.7-87zM30 259.6a242 242 0 0072.7 11.7c7.8 0 15.6-.5 23.2-1.3a165.9 165.9 0 0087-35.7l21.8 21.7L85.9 404.8a225.3 225.3 0 01-55.8-145.2z" />
+                        </svg>
+                        <p style="margin-left: 10px;">Player name<br><a href="#">Quan Ha</a></p>
+                        </div>
+                      </div>-->
             </div>
           </div>
         </div>
       </div>
-      <!-- RIGHT-CONTAINER -->
+      <!-- RIGHT-CONTAINER 
       <div class="right-container container2">
         <div class="tweets block">
-          <!-- TWEETS (MIDDLE-CONTAINER) -->
+           TWEETS (MIDDLE-CONTAINER) 
           <h2 class="titular"><span class="icon zocial-twitter"></span>Últimas Preguntas</h2>
           <div class="tweet first">
             <p>Ice-cream trucks only play music when out of ice-cream. Well played dad. On <a class="tweet-link"
@@ -168,7 +224,7 @@
             <p><a class="scnd-font-color" href="#20">6 hours ago</a></p>
           </div>
         </div>
-      </div> <!-- end right-container -->
+      </div> end right-container -->
     </div> <!-- end main-container -->
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
