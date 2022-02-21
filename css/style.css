@@ -19066,22 +19066,7 @@ section {
   border:0;
 }
 /*# sourceMappingURL=maps/style.css.map */
-<<<<<<< HEAD
-
-/* Estilos de los iconon*/
-#linked{
-  transform: translateX(30px) translateY(-26px);
-  
-}
-
 .icon{
-  font-size: 25px;
-  color: #35858B;
+  transform: translateX(28px) translateY(-32px);
+  font-size: 30px;
 }
-
-
-=======
-.icon{
-  transform: translateX(25px) translateY(-17px);
-}
->>>>>>> blog
