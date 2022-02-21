@@ -331,6 +331,11 @@ marquee span:before {
   margin-top: 100px;
   letter-spacing: -1px;
 }
+.blog-right-container a{
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (max-width: 1400px) {
   .blog-right-title-container {
     margin-top: 88px;
@@ -380,11 +385,13 @@ marquee span:before {
   display: flex;
   flex-direction: column;
 }
+
 @media screen and (max-width: 768px) {
   .right-blog {
     display: none;
   }
 }
+
 @media screen and (max-width: 1030px) {
   .right-blog .blog-menu {
     display: none;
