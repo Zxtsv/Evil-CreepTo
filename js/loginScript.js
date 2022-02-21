@@ -57,6 +57,9 @@ alert("Las contraseñas no coinciden, favor de verificarlas")
 return false;
 
 
+localStorage.setItem("usuarioRegistro", usuarioRegistro);
+localStorage.setItem("contraseñaRegistrocontraseña", contraseñaRegistro);
+localStorage.setItem("repetirContraseñacontraseña", repetirContraseña);
 }
 /*funciones del formato*/
 $('.toggle').on('click', function() {
