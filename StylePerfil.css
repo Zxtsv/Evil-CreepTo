@@ -547,7 +547,7 @@ p.center-date {
   text-align: center;
 }
 .tweets {
-  height: 375px;
+  height: auto;
 }
 .tweets .titular {
   background: var(--metallic);
