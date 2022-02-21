@@ -2,12 +2,11 @@
 body {
   background: #ffffff;
   color: #666666;
-font-family: 'Roboto Condensed', sans-serif;
-max-width: 100%;
-  
-
 }
  /*Container */
+ nav > .container{
+   width: 100%;
+ }
 .container {
   width: 50%;
   position: relative;
