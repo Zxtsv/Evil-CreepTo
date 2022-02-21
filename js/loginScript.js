@@ -50,7 +50,7 @@ function validarRegistro() {
    if(contraseñaRegistro===repetirContraseña){
   localStorage.setItem("Nuevo usuario", usuarioRegistro);
   localStorage.setItem("Contraseña registro", contraseñaRegistro);
-  return window.alert("Acceso")
+    return console.log("acceso");;
    
   }else
 alert("Las contraseñas no coinciden, favor de verificarlas")
