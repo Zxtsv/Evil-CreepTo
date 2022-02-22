@@ -84,7 +84,16 @@
             <div class="blog-header">
                 <div class="blog-article header-article">
                     <div class="blog-big__title">Noticias</div>
-                    <div class="blog-menu small-title date" id="date">12.06.2021</div>
+                    <div class="blog-menu small-title date" id="date">
+                        <script>
+                            var today = new Date();
+                            if (today.getMonth>8) {
+                                document.write(today.getDate() + "." + (today.getMonth()+1) + "." + today.getFullYear());
+                            } else {
+                                document.write(today.getDate() + ".0" + (today.getMonth()+1) + "." + today.getFullYear());
+                            }                            
+                        </script>
+                    </div>
                 </div>
                 <div class="blog-article" id="noticia1">
                     <img src="./images/carousel/not1.jpg" alt="">
