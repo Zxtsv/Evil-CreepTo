@@ -15,6 +15,9 @@ fetch(url)
         div.setAttribute('id',pub.id_pregunta);
         div.setAttribute('categoria',pub.id_categoria);
         div.innerHTML = publicacion;
+        div.addEventListener('click',function(){
+            window.location.href = `../../foroPost.html?id=${pub.id_pregunta}`;
+        });
         aplicacion.appendChild(div);
     });
 })

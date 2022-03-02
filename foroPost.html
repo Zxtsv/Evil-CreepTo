@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="css/styleForum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/assets/img/logo.png" />
+</head>
+
+<body>
+    <header>
+        <!--NavBar Section-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="../images/assets/img/ajolote1.png"
+                        alt="Creepto-Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
+                        <img src="images/logo-dark.svg" class="logo-mobile-menu" alt="logo">
+                        <a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
+                    </div>
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forums.html">Foro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#plans">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success" href="login.html">Logeate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Everything">Todos los Post</option>
+                    <option value="Wallets">Wallets</option>
+                    <option value="Blockchain">Blockchain</option>
+                    <option value="Criptomonedas">Criptomonedas</option>
+                </select>
+                <input type="text" name="q" placeholder="Buscar...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-4 mb-5">
+        <div class="container">
+            <!--Section: Post data-mdb-->
+            <section class="border-bottom mb-4">
+                <div class="col-lg-6 text-center text-lg-start mb-3 m-lg-0">
+                    <button type="button" class="btn btn-success mr-5 btn-inicio">Inicio</button>
+                    <a href="" class="text-dark">Anna</a>
+                    <img src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/100/000000/external-user-shopping-mall-xnimrodx-blue-xnimrodx.png"
+                        class="rounded-5 shadow-1-strong me-2" height="35" alt="" loading="lazy" />
+                    <span> Published <u>15.07.2020</u> by</span>
+                </div>
+            </section>
+            <!--Section: Post data-mdb-->
+
+            <!--Section: Text-->
+            <section class="Pregunta">
+            </section>
+            <!--Section: Text-->
+
+            <!--Section: Share buttons-->
+            <section class="text-center border-top border-bottom py-4 mb-4">
+                <button type="button" class="btn btn-primary me-1">
+                    <i class="fas fa-comments me-2"></i>Add comment
+                </button>
+            </section>
+            <!--Section: Share buttons-->
+
+            <!--Section: Comments-->
+            <section class="border-bottom mb-3 Comments">
+            </section>
+            <!--Section: Comments-->
+
+            <!--Section: Reply-->
+            <section>
+                <p class="text-center"><strong>Leave a reply</strong></p>
+                <form>
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form4Example3">Comentario</label>
+                        <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                        Publish
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="js/forumMain.js"></script>
+    <script src="js/api/forumComments.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
