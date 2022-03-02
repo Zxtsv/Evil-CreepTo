@@ -9,7 +9,7 @@ if (usuario ==="" || contraseña===""){
   alert ("Todos los campos son obligatorios");
   return false;
 }
-else if (usuario.length>30){
+else if (usuario.length>45){
   alert("El correo es muy largo");
 return false;
  } 
@@ -17,7 +17,7 @@ return false;
   alert("El correo no es válido"); 
   return false;
  }
- else if(contraseña.length>9){
+ else if(contraseña.length>45){
   alert("La contraseña es muy larga"); 
 return false; 
 }
@@ -39,7 +39,7 @@ function validarRegistro() {
     alert ("Todos los campos son obligatorios");
     return false;
   }
-  else if (usuarioRegistro.length>30){
+  else if (usuarioRegistro.length>45){
     alert("El correo es muy largo");
   return false;
    } 

@@ -245,13 +245,13 @@ body {
 .card.alt .toggle {
   position: relative;
   background: #35858B;
-  width: 140px;
+  width: 200px;
   height: 280px; /*cambio de 140*/
   border-radius: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #AEFEFF;
   font-size: 58px;
-  line-height: 140px;
+  line-height: 130px;
   text-align: center;
   cursor: pointer;
 }
