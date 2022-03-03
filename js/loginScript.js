@@ -76,8 +76,8 @@ document.getElementById("btnSend").addEventListener("click", function(e){
   let contraseña = document.getElementById("contraseña");
   console.log(usuario.value);
   console.log(contraseña.value);
-  const data = { usuario: usuario.value, 
-                      contraseña: contraseña.value
+  const data = { email: usuario.value, 
+                      contrasena: contraseña.value
   };
 
 fetch("http://127.0.0.1:8080/api/login/", {
