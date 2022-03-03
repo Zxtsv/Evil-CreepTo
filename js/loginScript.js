@@ -1,3 +1,6 @@
+function redirectPage(){
+  window.location = "perfilUsuario.html";
+} //redirectPage()
 //validar login 
 function validar() {
 var usuario, contraseña, expresion;
@@ -20,11 +23,16 @@ return false;
  else if(contraseña.length>45){
   alert("La contraseña es muy larga"); 
 return false; 
-}
+}else if(dataUser.email != usuario || dataUser.contrasena != contraseña){
+  alert("Ese correo y/o contraseña no existe")}
+  else if(dataUser.email == usuario && dataUser.contrasena == contraseña){
 //almacenamiento de datos Local
 localStorage.setItem("usuario", usuario);
 localStorage.setItem("contraseña", contraseña);
-
+setTimeout(redirectPage(), 1000); //Redirecciona la pagina en cierto tiempo / 1 seg = 1000mseg
+}else {
+alert("Error");
+}
 }
 //validar registro
 function validarRegistro() {
@@ -55,16 +63,17 @@ function validarRegistro() {
    if(contraseñaRegistro===repetirContraseña){
   localStorage.setItem("Nuevo usuario", usuarioRegistro);
   localStorage.setItem("Contraseña registro", contraseñaRegistro);
-    return console.log("acceso");;
-   
-  }else
+  setTimeout("redirectPage()", 1000); //Redirecciona la pagina en cierto tiempo / 1 seg = 1000mseg
+    return console.log("acceso");
+  }else{
 alert("Las contraseñas no coinciden, favor de verificarlas")
 return false;
 
 //almacenamiento de datos Local
 localStorage.setItem("usuarioRegistro", usuarioRegistro);
-localStorage.setItem("contraseñaRegistrocontraseña", contraseñaRegistro);
+localStorage.setItem("contraseñaRegistro", contraseñaRegistro);
 localStorage.setItem("repetirContraseñacontraseña", repetirContraseña);
+  }
 }
 /*funciones del formato*/
 $('.toggle').on('click', function() {
@@ -81,7 +90,7 @@ document.getElementById("btnSend").addEventListener("click", function(e){
   let contraseña = document.getElementById("contraseña");
   console.log(usuario.value);
   console.log(contraseña.value);
-  const data = { email: usuario.value, 
+  var dataUser = { email: usuario.value, 
                       contrasena: contraseña.value
   };
 
@@ -90,16 +99,19 @@ method: 'POST', // or 'PUT'
 headers: {
 'Content-Type': 'application/json',
 },
-body: JSON.stringify(data),
+body: JSON.stringify(dataUser),
 })
 .then(response => response.text())
-.then(data => {
-console.log('Success:', data);
+.then(dataUser => {
+console.log('Success:', dataUser);
+redirectPage();
 })
 .catch((error) => {
-console.error('Error:', error);
+console.error(alert('Error:'), error);
 });
 });
+
+
 
 //Conexion front y back "Registro"
 document.getElementById("btnSend2").addEventListener("click", function(e){
@@ -112,14 +124,12 @@ document.getElementById("btnSend2").addEventListener("click", function(e){
   console.log(usuarioRegistro.value);
   console.log(contraseñaRegistro.value);
   
-  const data = { nombre_usuario:nombre_usuario.value,
+  var data = { nombre_usuario:nombre_usuario.value,
                   email: usuarioRegistro.value, 
-                  contrasena: contraseña.value,
-                      
-                      
+                  contrasena: contraseñaRegistro.value
   };
 
-fetch("http://127.0.0.1:8081/api/login/", {
+fetch("http://127.0.0.1:8081/api/usuarios/", {
 method: 'POST', // or 'PUT'
 headers: {
 'Content-Type': 'application/json',
@@ -129,8 +139,9 @@ body: JSON.stringify(data),
 .then(response => response.text())
 .then(data => {
 console.log('Success:', data);
+redirectPage();
 })
 .catch((error) => {
-console.error('Error:', error);
+console.error(alert('Error:'), error);
 });
 });

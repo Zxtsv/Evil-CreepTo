@@ -76,7 +76,7 @@
   <div class="card"></div>
   <div class="card">
     <h1 class="title">Iniciar sesión</h1>
-    <form action="perfilUsuario.html" method="get" class="Form-login" onsubmit="return validar();">
+    <form method="get" class="Form-login">
       <div class="input-container">
         <input type="email" id="usuario" />
         <label for="Usuario">Correo de usuario</label  > 
@@ -88,8 +88,8 @@
         <div class="bar"></div>
       </div>
       <div class="button-container">
-          <button id="btnSend">
-            <a href="perfilUsuario.html"><span>Ingresar</span></a>
+          <button id="btnSend" onclick="validar();">
+            <span>Ingresar</span>
             </button><!--darle acceso a sesión -->
       </div>
       <div class="footer"><a href="#">¿Olvidaste tu contraseña?</a></div> <!--Enlace con la sig. página un nuevo formulario para reestablecer contraseña-->
@@ -102,7 +102,7 @@
     <h1 class="title">Registro
       <div class="close"></div>
     </h1>
-    <form action="perfilUsuario.html" method="get" class="Form-login" onsubmit="return validarRegistro();">
+    <form method="get" class="Form-login" onsubmit="return validarRegistro();">
       <div class="input-container">
         <input type="nombre" id="nombre_usuario" />
         <label for="Usuario">Nombre de Usuario</label>
