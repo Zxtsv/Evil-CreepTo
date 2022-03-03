@@ -70,7 +70,7 @@ $('.close').on('click', function() {
   $('.container').stop().removeClass('active');
 });
 
-//Conexion fron y back "Login"
+//Conexion front y back "Login"
 document.getElementById("btnSend").addEventListener("click", function(e){
   let usuario = document.getElementById("usuario");
   let contraseña = document.getElementById("contraseña");
@@ -95,4 +95,41 @@ console.log('Success:', data);
 console.error('Error:', error);
 });
 });
+
+//Conexion front y back "Registro"
+document.getElementById("btnSend").addEventListener("click", function(e){
+  let nombre_usuario=document.getElementById("nombre_usuario")
+  let usuarioRegistro = document.getElementById("usuarioRegistro");
+  let contraseñaRegistro = document.getElementById("contraseñaRegistro");
+  
+  
+  console.log(nombre_usuario.value);
+  console.log(usuarioRegistro.value);
+  console.log(contraseñaRegistro.value);
+  
+  const data = { nombre_usuario:nombre_usuario.value,
+                  email: usuarioRegistro.value, 
+                  contrasena: contraseña.value,
+                      
+                      
+  };
+
+fetch("http://127.0.0.1:8080/api/login/", {
+method: 'POST', // or 'PUT'
+headers: {
+'Content-Type': 'application/json',
+},
+body: JSON.stringify(data),
+})
+.then(response => response.text())
+.then(data => {
+console.log('Success:', data);
+})
+.catch((error) => {
+console.error('Error:', error);
+});
+});
+
+
+
 
