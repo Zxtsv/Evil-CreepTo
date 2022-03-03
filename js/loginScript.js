@@ -95,7 +95,6 @@ console.log('Success:', data);
 console.error('Error:', error);
 });
 });
-
 //Conexion front y back "Registro"
 document.getElementById("btnSend").addEventListener("click", function(e){
   let nombre_usuario=document.getElementById("nombre_usuario")
@@ -129,6 +128,7 @@ console.log('Success:', data);
 console.error('Error:', error);
 });
 });
+
 
 
 
