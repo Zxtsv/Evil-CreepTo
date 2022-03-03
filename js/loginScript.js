@@ -28,10 +28,11 @@ localStorage.setItem("contraseña", contraseña);
 }
 //validar registro
 function validarRegistro() {
-  var usuarioRegistro, contraseñaRegistro,repetirContraseña,expresionRegistro;
+  var usuarioRegistro, contraseñaRegistro,repetirContraseña,expresionRegistro, nombre_usuario;
   usuarioRegistro=document.getElementById("usuarioRegistro").value;
   contraseñaRegistro=document.getElementById("contraseñaRegistro").value;
   repetirContraseña=document.getElementById("repetirContraseña").value;
+  nombre_usuario=document.getElementById("nombre_usuario").value;
   
   expresionRegistro= /^\w+([\.\+\-]?\w+)*@\w+([\.-]?\w+)*(\.\w)+$/
   
@@ -39,6 +40,10 @@ function validarRegistro() {
     alert ("Todos los campos son obligatorios");
     return false;
   }
+  else if (nombre_usuario.length>45){
+    alert("Tu nombre es muy largo");
+  return false;
+   }
   else if (usuarioRegistro.length>45){
     alert("El correo es muy largo");
   return false;
