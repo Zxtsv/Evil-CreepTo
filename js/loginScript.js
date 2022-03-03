@@ -75,3 +75,29 @@ $('.close').on('click', function() {
   $('.container').stop().removeClass('active');
 });
 
+//Conexion front y back "Login"
+document.getElementById("btnSend").addEventListener("click", function(e){
+  let usuario = document.getElementById("usuario");
+  let contraseña = document.getElementById("contraseña");
+  console.log(usuario.value);
+  console.log(contraseña.value);
+  const data = { email: usuario.value, 
+                      contrasena: contraseña.value
+  };
+
+fetch("http://127.0.0.1:8080/api/login/", {
+method: 'POST', // or 'PUT'
+headers: {
+'Content-Type': 'application/json',
+},
+body: JSON.stringify(data),
+})
+.then(response => response.text())
+.then(data => {
+console.log('Success:', data);
+})
+.catch((error) => {
+console.error('Error:', error);
+});
+});
+
