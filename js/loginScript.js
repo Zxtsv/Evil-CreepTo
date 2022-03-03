@@ -70,7 +70,7 @@ $('.close').on('click', function() {
   $('.container').stop().removeClass('active');
 });
 
-//Conexion fron y back "Login"
+//Conexion front y back "Login"
 document.getElementById("btnSend").addEventListener("click", function(e){
   let usuario = document.getElementById("usuario");
   let contraseña = document.getElementById("contraseña");
