@@ -34,7 +34,7 @@ return false;
 //almacenamiento de datos Local
 localStorage.setItem("usuario", usuario);
 localStorage.setItem("contraseña", contraseña);
-setTimeout(redirectPage(), 1000); //Redirecciona la pagina en cierto tiempo / 1 seg = 1000mseg
+//setTimeout(redirectPage(), 1000); Redirecciona la pagina en cierto tiempo / 1 seg = 1000mseg
 }else {
 alert("Error");
 }

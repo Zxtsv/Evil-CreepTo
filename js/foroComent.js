@@ -28,7 +28,7 @@ function enviars() {
         method: "POST",
         body: JSON.stringify({
             id_categoria: categoria,
-            id_usuario: 3,
+            id_usuario: 9,
             pregunta_titulo: titulo,
             pregunta_cuerpo: cuerpo
         }),
