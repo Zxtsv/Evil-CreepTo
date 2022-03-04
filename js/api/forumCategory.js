@@ -59,3 +59,4 @@ btnBlock.addEventListener('click',function(){
 btnWallet.addEventListener('click',function(){
     window.location.href = `../../forumCat.html?cat=${3}`;
 });
+
