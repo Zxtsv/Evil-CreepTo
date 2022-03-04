@@ -11,7 +11,7 @@ fetch(url)
 .then(data => {
     data.slice().reverse().forEach(pub => {
         const div = document.createElement('div');
-        let publicacion = '<div class="subforum-row"><div class="subforum-icon subforum-column center"><i class="fa fa-car center"></i></div><div class="subforum-description subforum-column"><h4>' + pub.pregunta_titulo + '</h4><p>' + pub.pregunta_cuerpo + '</p></div><div class="subforum-info subforum-column"><b><a href="">Last post</a></b> by <a href="">JustAUser</a> <br>on <small>04 Mar 2022</small></div></div>';
+        let publicacion = '<div class="subforum-row"><div class="subforum-icon subforum-column center"><img src="../../images/ajolote.png" ></div><div class="subforum-description subforum-column"><h4>' + pub.pregunta_titulo + '</h4><p>' + pub.pregunta_cuerpo + '</p></div><div class="subforum-info subforum-column"><b><a href="">Last post</a></b> by <a href="">JustAUser</a> <br>on <small>04 Mar 2022</small></div></div>';
         div.setAttribute('id',pub.id_pregunta);
         div.setAttribute('categoria',pub.id_categoria);
         div.innerHTML = publicacion;
