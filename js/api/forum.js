@@ -9,9 +9,9 @@ const url = "http://127.0.0.1:8080/api/publicacion/";
 fetch(url)
 .then(res => res.json())
 .then(data => {
-    data.forEach(pub => {
+    data.slice().reverse().forEach(pub => {
         const div = document.createElement('div');
-        let publicacion = '<div class="subforum-row"><div class="subforum-icon subforum-column center"><i class="fa fa-car center"></i></div><div class="subforum-description subforum-column"><h4>' + pub.pregunta_titulo + '</h4><p>' + pub.pregunta_cuerpo + '</p></div><div class="subforum-stats subforum-column center"><span>24 Posts | 12 Topics</span></div><div class="subforum-info subforum-column"><b><a href="">Last post</a></b> by <a href="">JustAUser</a> <br>on <small>12 Dec 2020</small></div></div>';
+        let publicacion = '<div class="subforum-row"><div class="subforum-icon subforum-column center"><i class="fa fa-car center"></i></div><div class="subforum-description subforum-column"><h4>' + pub.pregunta_titulo + '</h4><p>' + pub.pregunta_cuerpo + '</p></div><div class="subforum-info subforum-column"><b><a href="">Last post</a></b> by <a href="">JustAUser</a> <br>on <small>04 Mar 2022</small></div></div>';
         div.setAttribute('id',pub.id_pregunta);
         div.setAttribute('categoria',pub.id_categoria);
         div.innerHTML = publicacion;

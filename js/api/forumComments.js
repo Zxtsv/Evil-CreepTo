@@ -30,7 +30,7 @@ fetch(`${url}${id}`)
         div.innerHTML=publicacion;
         aplicacion.appendChild(div);
     });
-})
+});
 
 btnInicio.addEventListener('click',function(){
     window.location.href = `../../forums.html`;
