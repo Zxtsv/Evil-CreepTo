@@ -1,6 +1,11 @@
 function redirectPage(){
   window.location = "perfilUsuario.html";
 } //redirectPage()
+
+function incorrectPage(){
+  window.location = "index.html";
+}
+
 //validar login 
 function validar() {
 var usuario, contraseña, expresion;
@@ -84,32 +89,89 @@ $('.close').on('click', function() {
   $('.container').stop().removeClass('active');
 });
 
-//Conexion front y back "Login"
-document.getElementById("btnSend").addEventListener("click", function(e){
-  let usuario = document.getElementById("usuario");
-  let contraseña = document.getElementById("contraseña");
-  console.log(usuario.value);
-  console.log(contraseña.value);
-  var dataUser = { email: usuario.value, 
-                      contrasena: contraseña.value
-  };
+// //Conexion front y back "Login"
+// document.getElementById("btnSend").addEventListener("click", function(e){
+//   let usuario = document.getElementById("usuario");
+//   let contraseña = document.getElementById("contraseña");
+//   console.log(usuario.value);
+//   console.log(contraseña.value);
+//   var dataUser = { email: usuario.value, 
+//                       contrasena: contraseña.value
+//   };
 
-fetch("http://127.0.0.1:8081/api/login/", {
-method: 'POST', // or 'PUT'
-headers: {
-'Content-Type': 'application/json',
-},
-body: JSON.stringify(dataUser),
-})
-.then(response => response.text())
-.then(dataUser => {
-console.log('Success:', dataUser);
-redirectPage();
-})
-.catch((error) => {
-console.error(alert('Error:'), error);
-});
-});
+// fetch("http://localhost:8080/api/login/", {
+// method: 'POST', // or 'PUT'
+// headers: {
+// 'Content-Type': 'application/json'
+// },
+// body: JSON.stringify(dataUser)
+// })
+// .then(response => response.text())
+// .then(dataUser => {
+// console.log('Success:', dataUser);
+// redirectPage();
+// })
+// .catch((error) => {
+// console.error(alert('Error:'), error);
+// });
+// });
+
+
+//nuevologin
+function loginUser(){
+  //obtiene los valores de los inputs
+  var userEmail = document.getElementById("usuario").value
+  var userPass = document.getElementById("contraseña").value;
+  //Imprime en consola los valores obtenidos
+  console.log(userEmail + " " + userPass);
+  
+  //Almacena en un objeto los valores obtenidos
+  var dataUser = {email: userEmail, contrasena: userPass}
+
+  //Imprime en consola los valores en formato JSON
+  console.log(JSON.stringify(dataUser))
+
+  //Fetch con metodo post que compara los datos ingresadps
+  fetch("http://localhost:8080/api/login/", {
+  method: 'POST', // or 'PUT'
+  headers: {
+      'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(dataUser),
+  })
+  .then(response => response.text())
+  .then(dataUser => {
+
+      console.log('Success:', dataUser);
+      // window.location = "perfilUsuario.html";
+      
+      if(dataUser == "Accesso permitido"){
+      //   //console.log("vientos")
+            alert("Bienvenido")
+            window.location = "perfilUsuario.html";
+      //     // document.getElementById("userPassIncorrect").innerHTML = "";
+      //     // document.getElementById("userNoRegister").innerHTML = "";
+      //     // addUserCookies(userEmail);
+      }else if (dataUser == "Nombre de usuario o contraseña incorrectos"){
+      //     //console.log("novientos");
+          alert("Usuario o contraseña incorrecto");
+          window.location = "index.html";
+      //     // document.getElementById("userPassIncorrect").innerHTML = `
+      //     // <p class="text-center" style="border: solid 2px #FF6464; border-radius: 10px; color: #FF6464; font-size: 18px;">Email o contraseña incorrectos</p>`
+      //     // document.getElementById("userNoRegister").innerHTML = `<br><div class="text-center" style="font-size:18px">¿Quieres formar parte de nuestra familia? <a class="register-here" href="register.html">Registrate aquí</a></div>
+      //     // <hr>`
+      } else {
+        alert("Error");
+      }
+
+
+  })
+  .catch((error) => {
+  console.error('Error:', error);
+  window.location.href = "login.html";
+  });
+
+};
 
 
 
@@ -129,16 +191,16 @@ document.getElementById("btnSend2").addEventListener("click", function(e){
                   contrasena: contraseñaRegistro.value
   };
 
-fetch("http://127.0.0.1:8081/api/usuarios/", {
-method: 'POST', // or 'PUT'
-headers: {
-'Content-Type': 'application/json',
-},
-body: JSON.stringify(data),
+fetch("http://localhost:8080/api/usuarios/", {
+  method: 'POST', // or 'PUT'
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data)
 })
-.then(response => response.text())
+.then(response => response.json())
 .then(data => {
-console.log('Success:', data);
+  console.log('Success:', data);
 redirectPage();
 })
 .catch((error) => {
