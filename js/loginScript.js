@@ -36,7 +36,7 @@ localStorage.setItem("usuario", usuario);
 localStorage.setItem("contraseña", contraseña);
 //setTimeout(redirectPage(), 1000); Redirecciona la pagina en cierto tiempo / 1 seg = 1000mseg
 }else {
-alert("Error");
+//alert("Error");
 }
 }
 //validar registro
@@ -161,7 +161,7 @@ function loginUser(){
       //     // document.getElementById("userNoRegister").innerHTML = `<br><div class="text-center" style="font-size:18px">¿Quieres formar parte de nuestra familia? <a class="register-here" href="register.html">Registrate aquí</a></div>
       //     // <hr>`
       } else {
-        alert("Error");
+        //alert("Error");
       }
 
 
